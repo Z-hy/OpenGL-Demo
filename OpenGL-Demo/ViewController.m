@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "OpenGLDrawView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet OpenGLDrawView *openGLView;
 
 @end
 
@@ -17,6 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+////    self.view.backgroundColor = [UIColor redColor];
+//    
+//    OpenGLDrawView *view = [[OpenGLDrawView alloc] init];
+//    view.frame = self.view.bounds;
+////    view.backgroundColor = [UIColor blueColor];
+//    [self.view addSubview:view];
+////    [view layoutSubviews];
 }
 
 

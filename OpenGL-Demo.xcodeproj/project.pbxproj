@@ -13,6 +13,8 @@
 		CEAE08B01F5F997A00F65927 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAE08AE1F5F997A00F65927 /* Main.storyboard */; };
 		CEAE08B21F5F997A00F65927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAE08B11F5F997A00F65927 /* Assets.xcassets */; };
 		CEAE08B51F5F997A00F65927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAE08B31F5F997A00F65927 /* LaunchScreen.storyboard */; };
+		CEAE08BE1F5F998E00F65927 /* OpenGLDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAE08BD1F5F998E00F65927 /* OpenGLDrawView.m */; };
+		CEAE08C11F5F99B900F65927 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAE08C01F5F99B900F65927 /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		CEAE08B11F5F997A00F65927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEAE08B41F5F997A00F65927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEAE08B61F5F997A00F65927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEAE08BC1F5F998E00F65927 /* OpenGLDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLDrawView.h; sourceTree = "<group>"; };
+		CEAE08BD1F5F998E00F65927 /* OpenGLDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLDrawView.m; sourceTree = "<group>"; };
+		CEAE08C01F5F99B900F65927 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAE08C11F5F99B900F65927 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				CEAE08A41F5F997A00F65927 /* OpenGL-Demo */,
 				CEAE08A31F5F997A00F65927 /* Products */,
+				CEAE08BF1F5F99B900F65927 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +69,8 @@
 				CEAE08A91F5F997A00F65927 /* AppDelegate.m */,
 				CEAE08AB1F5F997A00F65927 /* ViewController.h */,
 				CEAE08AC1F5F997A00F65927 /* ViewController.m */,
+				CEAE08BC1F5F998E00F65927 /* OpenGLDrawView.h */,
+				CEAE08BD1F5F998E00F65927 /* OpenGLDrawView.m */,
 				CEAE08AE1F5F997A00F65927 /* Main.storyboard */,
 				CEAE08B11F5F997A00F65927 /* Assets.xcassets */,
 				CEAE08B31F5F997A00F65927 /* LaunchScreen.storyboard */,
@@ -77,6 +86,14 @@
 				CEAE08A61F5F997A00F65927 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEAE08BF1F5F99B900F65927 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEAE08C01F5F99B900F65927 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAE08AD1F5F997A00F65927 /* ViewController.m in Sources */,
+				CEAE08BE1F5F998E00F65927 /* OpenGLDrawView.m in Sources */,
 				CEAE08AA1F5F997A00F65927 /* AppDelegate.m in Sources */,
 				CEAE08A71F5F997A00F65927 /* main.m in Sources */,
 			);
